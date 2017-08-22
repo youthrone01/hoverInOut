@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hover In and Out</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').hover(function(){
+                    var new_src= "";
+                    new_src = $(this).attr('alt-src');
+                    // $('p').text(new_src) for test;
+                    $(this).attr('src',new_src);
+                },
+                function(){
+                    var new_src= "";
+                    new_src = $(this).attr('main-src');
+                    $(this).attr('src',new_src);
+                });
+            });
+        
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <img src="img\brienne.jpg" alt="game_of_thrones" alt-src="img\jaime.jpg" main-src="img\brienne.jpg">
+            <img src="img\bronn.jpg" alt="game_of_thrones" alt-src="img\melisandre.jpg" main-src="img\bronn.jpg">
+            <img src="img\daenerys.jpg" alt="game_of_thrones" alt-src="img\littlefinger.jpg" main-src="img\daenerys.jpg">
+            <img src="img\davos.jpg" alt="game_of_thrones" alt-src="img\sansa.jpg" main-src="img\davos.jpg">
+        </div>
+        <p></p>
+    
+    </body>
+</html>

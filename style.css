@@ -1,0 +1,16 @@
+.container{
+    margin: 0 auto;
+    width: 970px;
+    background-color: grey;
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+img{
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    
+}
